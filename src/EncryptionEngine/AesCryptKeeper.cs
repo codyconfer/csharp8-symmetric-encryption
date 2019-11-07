@@ -140,8 +140,8 @@ namespace EncryptionDemo.EncryptionEngine
         /// <param name="disposing">follows dotnet dispose pattern.</param>
         private void Dispose(bool disposing)
         {
-            _key = null;
-            _iv = null;
+            if (_key != null) Array.Clear(_key, 0, _key.Length);
+            if (_iv != null) Array.Clear(_iv, 0, _iv.Length);
         }
 
         /// <summary>
