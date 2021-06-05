@@ -26,7 +26,7 @@ namespace EncryptionDemo.EncryptionEngine
         /// <summary>
         /// Gets secrets from store and sets secret fields.
         /// </summary>
-        //!TODO: Store/Retrieve secrets in key vault here
+        //TODO: Store/Retrieve secrets in key vault here
         private void HandleKeys()
         {
             using var rijndael = new RijndaelManaged
